@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KAF'S STEEL BENDING ENTERPRISE in Ghana provides reinforcement steel cutting, bending, tying and Bar Bending Schedule services.">
+
+  <meta name="description" content="KAF'S STEEL BENDING ENTERPRISE in Accra, Ghana. Reinforcement steel cutting, bending, tying and Bar Bending Schedule services.">
+
   <title>KAF'S STEEL BENDING ENTERPRISE | Ghana</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -19,309 +22,298 @@
 
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #222;
-      background: #f4f6f8;
+      background: #f4f5f7;
     }
 
     header {
-      background: #17212b;
+      background: #142536;
       color: white;
-      padding: 18px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
+      padding: 28px 15px;
+      text-align: center;
     }
 
-    .logo {
-      font-size: 21px;
-      font-weight: bold;
-      color: #ffb000;
+    header h1 {
+      color: #f5a623;
+      font-size: 27px;
+    }
+
+    nav {
+      background: #f5a623;
+      padding: 12px;
+      text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #142536;
       text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
+      font-weight: bold;
+      margin: 0 9px;
     }
 
     .hero {
-      background: linear-gradient(135deg, #17212b, #35495e);
+      background: #263b4d;
       color: white;
       text-align: center;
-      padding: 85px 7%;
+      padding: 55px 20px;
     }
 
-    .hero h1 {
-      font-size: clamp(30px, 6vw, 48px);
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-      color: #ffb000;
+    .hero h2 {
+      font-size: 31px;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      font-size: 17px;
+      max-width: 650px;
+      margin: 0 auto 22px;
     }
 
     .button {
       display: inline-block;
-      padding: 13px 22px;
-      background: #ffb000;
-      color: #17212b;
-      font-weight: bold;
-      text-decoration: none;
+      background: #f5a623;
+      color: #142536;
+      padding: 12px 20px;
+      margin: 7px 4px;
       border-radius: 5px;
-      margin: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .section {
-      padding: 55px 7%;
-      text-align: center;
+    .button:hover {
+      background: #ffc45d;
     }
 
-    .section h2 {
-      font-size: 29px;
-      margin-bottom: 15px;
-      color: #17212b;
-    }
-
-    .intro {
-      max-width: 750px;
+    section {
+      max-width: 1000px;
       margin: auto;
+      padding: 35px 18px;
+    }
+
+    section h2 {
+      color: #142536;
+      margin-bottom: 15px;
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 30px;
-      text-align: left;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
     }
 
-    .service-card {
+    .service {
+      background: white;
+      padding: 22px;
+      border-radius: 8px;
+      border-left: 4px solid #f5a623;
+    }
+
+    .service h3 {
+      color: #142536;
+      margin-bottom: 8px;
+    }
+
+    .contact {
       background: white;
       padding: 25px;
       border-radius: 8px;
-      border-bottom: 4px solid #ffb000;
-      box-shadow: 0 3px 12px #0000000d;
     }
 
-    .service-card h3 {
+    .contact p {
       margin-bottom: 10px;
-      color: #17212b;
+      overflow-wrap: anywhere;
     }
 
-    .service-icon {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .dark-section {
-      background: #17212b;
-      color: white;
-    }
-
-    .dark-section h2 {
-      color: #ffb000;
-    }
-
-    .contact-details {
-      max-width: 650px;
-      margin: 20px auto;
+    .contact a:not(.button) {
+      color: #125b36;
+      font-weight: bold;
     }
 
     footer {
-      background: #101820;
-      color: #ddd;
-      text-align: center;
-      padding: 22px;
-      font-size: 14px;
-    }
-
-    .whatsapp {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      background: #168b50;
+      background: #142536;
       color: white;
-      padding: 13px 17px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 3px 10px #0003;
-      z-index: 10;
+      text-align: center;
+      padding: 22px 15px;
     }
 
-    @media (max-width: 600px) {
-      header {
-        justify-content: center;
-        text-align: center;
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 22px;
       }
 
-      nav {
-        width: 100%;
+      .hero h2 {
+        font-size: 25px;
       }
 
-      .hero {
-        padding: 60px 6%;
-      }
-
-      .section {
-        padding: 42px 6%;
+      nav a {
+        display: inline-block;
+        margin: 5px;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <div class="logo">KAF'S STEEL BENDING</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>KAF'S STEEL BENDING ENTERPRISE</h1>
+    <p>Professional Reinforcement Steel Works</p>
+    <p>Accra, Ghana</p>
   </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
   <main>
-    <section class="hero" id="home">
-      <h1>Building Stronger Structures with <span>Precision Steel Work</span></h1>
+
+    <div class="hero" id="home">
+      <h2>Building Strong Foundations</h2>
       <p>
-        Your trusted partner for reinforcement steel cutting,
-        bending, tying and Bar Bending Schedule support
-        for construction projects across Ghana.
+        Your partner for reinforcement steel cutting,
+        bending, tying and Bar Bending Schedule services.
+        We aim to deliver accurate workmanship and reliable
+        service for your construction projects.
       </p>
-      <a class="button" href="#services">Explore Our Services</a>
-      <a class="button" href="#contact">Contact Our Team</a>
+
+      <a class="button" href="#services">Our Services</a>
+
+      <a class="button"
+         href="https://wa.me/233545032785"
+         target="_blank"
+         rel="noopener noreferrer">
+        Chat With Us on WhatsApp
+      </a>
+    </div>
+
+    <section id="about">
+      <h2>About Our Company</h2>
+
+      <p>
+        KAF'S STEEL BENDING ENTERPRISE is a Ghana-based
+        reinforcement steelwork business serving construction
+        projects in Accra and surrounding areas.
+      </p>
+
+      <p>
+        We focus on accurate measurements, quality workmanship,
+        safety and professional service to contractors,
+        builders and other construction clients.
+      </p>
     </section>
 
-    <section class="section" id="about">
-      <div class="intro">
-        <h2>About KAF'S STEEL BENDING ENTERPRISE</h2>
-        <p>
-          KAF'S STEEL BENDING ENTERPRISE is a Ghanaian
-          reinforcement steelwork business focused on accurate
-          bar preparation and dependable construction support.
-          We aim to help contractors, engineers, foremen and
-          developers complete reinforcement work efficiently.
-        </p>
-        <p style="margin-top:15px">
-          Our priorities are accuracy, workmanship, safety
-          and professional service.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="services" style="background:#e9eef2">
+    <section id="services">
       <h2>Our Services</h2>
-      <p>Reinforcement solutions for your construction project.</p>
 
       <div class="services">
-        <article class="service-card">
-          <div class="service-icon">🔩</div>
+
+        <div class="service">
           <h3>Steel Cutting</h3>
-          <p>Cutting reinforcement bars to specified lengths
-          using approved project details and schedules.</p>
-        </article>
+          <p>
+            Cutting reinforcement bars to specified lengths
+            according to approved drawings and requirements.
+          </p>
+        </div>
 
-        <article class="service-card">
-          <div class="service-icon">🛠️</div>
+        <div class="service">
           <h3>Steel Bending</h3>
-          <p>Preparing reinforcement bars to the required
-          shapes, dimensions and bending details.</p>
-        </article>
+          <p>
+            Bending reinforcement bars into required shapes
+            and dimensions.
+          </p>
+        </div>
 
-        <article class="service-card">
-          <div class="service-icon">🏗️</div>
-          <h3>Reinforcement Tying</h3>
-          <p>Fixing and tying reinforcement cages, beams,
-          columns, slabs and foundations according to approved
-          drawings.</p>
-        </article>
+        <div class="service">
+          <h3>Reinforcement Works</h3>
+          <p>
+            Reinforcement bar tying and fixing for suitable
+            structural construction projects.
+          </p>
+        </div>
 
-        <article class="service-card">
-          <div class="service-icon">📐</div>
-          <h3>Bar Bending Schedule</h3>
-          <p>BBS preparation support, bar quantities,
-          cutting lengths and reinforcement weight calculations.</p>
-        </article>
+        <div class="service">
+          <h3>Bar Bending Schedule (BBS)</h3>
+          <p>
+            Bar quantities, cutting lengths, reinforcement
+            weights and scheduling based on supplied drawings
+            and specifications.
+          </p>
+        </div>
 
-        <article class="service-card">
-          <div class="service-icon">🏢</div>
-          <h3>Structural Reinforcement</h3>
-          <p>Reinforcement labour support for building and
-          other construction projects, subject to approved plans.</p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-icon">👷</div>
-          <h3>Contractor Support</h3>
-          <p>Steel-bending labour and reinforcement support
-          for contractors, builders and construction teams.</p>
-        </article>
       </div>
     </section>
 
-    <section class="section dark-section">
-      <h2>Why Work With Us?</h2>
-      <p>Precision in every bar. Care in every structure.</p>
-      <p style="margin-top:15px">
-        ✔ Attention to measurements<br>
-        ✔ Commitment to workmanship<br>
-        ✔ Focus on site safety<br>
-        ✔ Clear communication with project teams
+    <section>
+      <h2>Our Commitment</h2>
+
+      <p>
+        We are committed to accurate work, good communication,
+        safety and dependable service. Reinforcement work must
+        follow approved structural drawings and project
+        specifications.
       </p>
     </section>
 
-    <section class="section" id="contact">
-      <h2>Contact KAF'S STEEL BENDING ENTERPRISE</h2>
-      <p>Have a project or need a reinforcement work quotation?</p>
+    <section id="contact">
+      <div class="contact">
 
-      <div class="contact-details">
-        <p><strong>Location:</strong> Accra, Ghana</p>
-        <p><strong>Services:</strong> Steel cutting, bending,
-        tying and BBS support</p>
-        <p style="margin-top:15px">
-          Contact us to discuss your project requirements.
+        <h2>Contact KAF'S STEEL BENDING ENTERPRISE</h2>
+
+        <p>
+          <strong>Company:</strong>
+          KAF'S STEEL BENDING ENTERPRISE
         </p>
 
-        <!-- Replace the placeholder below with your real WhatsApp number. -->
+        <p>
+          <strong>Location:</strong> Accra, Ghana
+        </p>
+
+        <p>
+          <strong>Company Contact Number:</strong>
+          <a href="tel:+233545032785">+233 54 503 2785</a>
+        </p>
+
+        <p>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/233545032785"
+             target="_blank"
+             rel="noopener noreferrer">
+            +233 54 503 2785
+          </a>
+        </p>
+
+        <p>
+          Contact us for quotations, reinforcement works
+          and construction project enquiries.
+        </p>
+
         <a class="button"
-           href="https://wa.me/233XXXXXXXXXhttps://wa.me/233545032785">
-          Chat With Us on WhatsApp
+           href="tel:+233545032785">
+          Call Our Company
         </a>
 
-        <p style="font-size:13px;margin-top:12px">
-          WhatsApp will work after you replace the placeholder
-          link with your full number, including Ghana's 233545032785 
-          country code without the leading zero.
-        </p>
+        <a class="button"
+           href="https://wa.me/233545032785"
+           target="_blank"
+           rel="noopener noreferrer">
+          Message Us on WhatsApp
+        </a>
+
       </div>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span>
-    KAF'S STEEL BENDING ENTERPRISE, Ghana.</p>
-    <p>Precision • Strength • Reliability</p>
+    <p>
+      &copy; 2026 KAF'S STEEL BENDING ENTERPRISE.
+    </p>
+    <p>Quality Reinforcement Works You Can Trust.</p>
   </footer>
 
-  <a class="whatsapp"
-     href="https://wa.me/233XXXXXXXXX"
-     aria-label="Contact us on WhatsApp">WhatsApp</233545032785 >
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
 </body>
 </html>
